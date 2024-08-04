@@ -4,7 +4,9 @@ import adminRoutes from './routes/admin.route.js'
 import userRoutes from './routes/user.route.js'
 const app = express();
 import cors from 'cors'
-app.use(cors());
+app.use(cors({
+    origin: 'https://assignment-for-intership-xkab.vercel.app'
+}));
 connectDB();
 
 // Middleware
