@@ -13,7 +13,7 @@ function AddCar() {
 
     const handleAddCar = async () => {
         try {
-            await axios.post("http://localhost:3000/api/admin/cars", {
+            await axios.post("https://assignment-for-intership-ngvx.vercel.app/api/admin/cars", {
                 name,
                 manufacturingYear,
                 price

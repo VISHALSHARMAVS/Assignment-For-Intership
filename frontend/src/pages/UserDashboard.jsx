@@ -13,7 +13,7 @@ function UserDashboard() {
   useEffect(() => {
     {
     axios
-        .get("http://localhost:3000/api/user/cars")
+        .get("https://assignment-for-intership-ngvx.vercel.app/api/user/cars")
         .then((res) => {
           setCars(res.data);
         })

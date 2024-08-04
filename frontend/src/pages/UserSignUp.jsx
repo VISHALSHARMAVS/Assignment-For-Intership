@@ -31,7 +31,7 @@ function UserSignup() {
                 <div className="pt-4">
                 <Button onClick={()=>{
                     try {
-                        axios.post("http://localhost:3000/api/user/register",{
+                        axios.post("https://assignment-for-intership-ngvx.vercel.app/api/user/register",{
                           
                             username,
                             email,

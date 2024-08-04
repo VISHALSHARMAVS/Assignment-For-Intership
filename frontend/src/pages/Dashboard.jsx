@@ -13,7 +13,7 @@ function Dashboard() {
   useEffect(() => {
     {
     axios
-        .get("http://localhost:3000/api/user/cars")
+        .get("https://assignment-for-intership-ngvx.vercel.app/api/user/cars")
         .then((res) => {
           setCars(res.data);
         })
@@ -72,7 +72,7 @@ function Dashboard() {
                   <Button
                   onClick={async() => {
                     try {
-                      await axios.delete(`http://localhost:3000/api/admin/cars/${cars._id}`, {
+                      await axios.delete(`https://assignment-for-intership-ngvx.vercel.app/api/admin/cars/${cars._id}`, {
                           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
                       }).then(()=>{
                         navigate('/');

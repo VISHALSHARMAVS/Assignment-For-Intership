@@ -33,7 +33,7 @@ function Signin(){
 
                 <div className="pt-4">
                     <Button onClick={()=>{
-                        axios.post("http://localhost:3000/api/admin/login",{
+                        axios.post("https://assignment-for-intership-ngvx.vercel.app/api/admin/login",{
                             username,
                             password
                         }).then(()=>{

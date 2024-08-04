@@ -13,7 +13,7 @@ function EditCar() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:3000/api/admin/cars/${id}`, {
+        axios.get(`https://assignment-for-intership-ngvx.vercel.app/api/admin/cars/${id}`, {
             headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         }).then((response) => {
             const car = response.data;            
@@ -29,7 +29,7 @@ function EditCar() {
 
     const handleEditCar = async () => {
         try {
-            await axios.put(`http://localhost:3000/api/admin/cars/${id}`, {
+            await axios.put(`https://assignment-for-intership-ngvx.vercel.app/api/admin/cars/${id}`, {
                 name,
                 manufacturingYear,
                 price
